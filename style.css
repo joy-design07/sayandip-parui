@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-body: #10141e;
+  --text-size-small: 16px;
+  --colour-primary: #ff5024;
+  --text-secondary: #ccd6e7;
+  --border: 1px solid #353a48;
+  --container-colour: #101010;
+  --bg-grid: #191919;
+  --border-radius: 10px;
+}
+
+body {
+  background-color: var(--bg-body);
+  color: #e8f0ff;
+}
+
+#nav-1 {
+  text-align: center;
+  margin-top: 40px;
+}
+#nav-2 {
+  text-align: center;
+  margin-top: 25px;
+  font-size: var(--text-size-small);
+  font-weight: 600;
+  color: var(--colour-primary);
+}
+
+#nav-3 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.grid-contaner {
+  background: var(--container-colour);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  margin: 27px auto 0;
+  padding: 50px 50px;
+  display: grid;
+  gap: 20px;
+  max-width: 1200px;
+  grid-template-columns: 1.4fr 1fr;
+  grid-template-rows: repeat(2, auto);
+
+  .elements {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 10px;
+    background: var(--bg-grid);
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    min-height: 100%;
+
+    h2 {
+      font-size: var(--text-size-small);
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    p {
+      color: #ccd6e7;
+      font-size: 14px;
+    }
+  }
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.img-1 {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.img-2 {
+  margin-right: 20px;
+}
+
+.grid-1 {
+  grid-row: span 2;
+}
+
+.grid-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.elements-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-container-2 {
+  background: var(--bg-container);
+  border: var(--border);
+  border-radius: var(--border-radius);
+
+  padding: 50px 50px;
+  display: grid;
+  gap: 20px;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  .elements {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 10px;
+    background: var(--bg-grid);
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    min-height: 100%;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      align-items: center;
+    }
+
+    h2 {
+      font-size: var(--text-size-small);
+      font-weight: 600;
+    }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+  }
+}
+
+.container-2 {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: auto;
+  padding: 0px 20px;
+  margin-top: 15px;
+}
+
+.container-3 {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: auto;
+  padding: 20px 20px;
+
+  main {
+    div {
+      h2 {
+        color: var(--text-secondary);
+        font-size: 14px;
+      }
+    }
+  }
+
+  li {
+    margin-top: 15px;
+  }
+}
+.lg-text {
+  font-size: xx-large;
+  font-weight: 800;
+
+  p {
+    font-weight: 400;
+  }
+}
+
+.btn {
+  border-radius: 10px;
+  border-style: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: var(--text-size-small);
+  min-width: 290px;
+  background-color: #313131;
+  height: 45px;
+}
+
+.list {
+  list-style: none;
+  margin-top: 10px;
+  gap: 48px;
+  color: #fff;
+}
+
+.btn-2 {
+  border-radius: 10px;
+  border-style: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: var(--text-size-small);
+  min-width: 290px;
+  background-color: var(--colour-primary);
+  height: 45px;
+}
+
+.colour-gradient {
+  color: #f8f8ff;
+  background-image: linear-gradient(
+    45deg,
+    #f8f8ff,
+    #e9ab9b 33%,
+    #ff5024 67%,
+    #ff3907 100%
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
