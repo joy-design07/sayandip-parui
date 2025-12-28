@@ -13,7 +13,7 @@
   --colour-primary: #ff5024;
   --text-secondary: #ccd6e7;
   --border: 1px solid #353a48;
-  --container-colour: #101010;
+  --container-colour: #131313;
   --bg-grid: #191919;
   --border-radius: 10px;
 }
@@ -111,7 +111,7 @@ section {
 }
 
 .grid-container-2 {
-  background: var(--bg-container);
+  background: var(--container-colour);
   border: var(--border);
   border-radius: var(--border-radius);
 
